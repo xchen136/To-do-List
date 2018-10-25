@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-do List</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/lib/jquery-3.3.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500|Unna" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+<body>
+	<div id="container">
+
+		<h1></h1>
+		<input type="text" name="" placeholder="+ add new task">
+
+		<ul>
+			<li>
+				<div class="dragger"><i class="fas fa-angle-right fa-sm"></i></div>
+				<span class="content" contenteditable="true" spellcheck="false">Do Laundry</span>				
+				<span class="delete"><i class="fas fa-times"></i></span>
+			</li>
+
+			<li>
+				<div class="dragger"><i class="fas fa-angle-right fa-sm"></i></div>
+				<span class="content" contenteditable="true" spellcheck="false">Workout 1hr</span>	 			
+				<span class="delete"><i class="fas fa-times"></i></span>
+			</li>
+
+			<li>
+				<div class="dragger"><i class="fas fa-angle-right fa-sm"></i></div>
+				<span class="content" contenteditable="true" spellcheck="false">Cook lunch</span>		
+				<span class="delete"><i class="fas fa-times"></i></span>
+			</li>
+		</ul>	
+
+		<div id="bottom">
+			<span id="numComplete">0/3 Completed</span>
+			<button id="clear">Clear</button>
+		</div>		
+
+	</div>
+	
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/todos.js"></script>
+</body>
+</html>
+
+
