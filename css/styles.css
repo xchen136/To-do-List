@@ -1,0 +1,178 @@
+
+
+/*GROUP SELECTORS******************************************************************************************************************************************************/
+
+/*Content besides the header*/
+li, #bottom, #clear{
+	font: 500 15px 'Quicksand', sans-serif;
+}
+
+
+input:focus, .content, #clear{
+	outline: none;
+}
+
+
+h1, ul, .content{
+	margin: 0;
+}
+
+
+input, #container{
+	width: 100%;
+}
+
+
+li, input:focus, #container, #clear{
+	background: #fff;
+}
+
+
+li, #bottom{
+	position: relative;
+}
+
+
+.dragger, .delete, #clear{
+	position: absolute;
+}
+
+
+/*Vertically center icons*/
+.dragger, .delete{
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+/*ELEMENT SELECTORS*****************************************************************************************************************************************************/
+
+body{
+	background: #FFEEE4;
+}
+
+
+h1{
+	padding: 10px 20px;
+	background: #232323; 
+	color: #fff;
+	font: 500 35px 'Unna', serif;
+}
+
+
+ul{
+	list-style: none;				
+	padding: 0 20px;
+}
+
+
+li{
+	line-height: 20px;
+	color: #666;
+	padding: 8px 0;
+	border-bottom: 1px dashed #c8cbd1;
+}
+
+
+/*the state of the list item when being dragged*/
+li.ui-sortable-helper{
+	border-top: 1px dashed #c8cbd1;
+}
+
+
+li:hover .delete{				
+	opacity: 0.2;
+}
+
+
+input{
+	box-sizing: border-box;			/*border and padding is included into the size of the input, creates border and padding using existing space instead of adding on*/
+	padding: 5px 20px 5px 15px;
+	background: #f7f7f7;
+	color: #232323;
+	font: 18px 'Quicksand', sans-serif;
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+
+
+/*clicking on the textInput box*/
+input:focus{
+	border: 3px solid #232323;
+}
+
+
+
+/*CLASS SELECTORS******************************************************************************************************************************************************/
+
+.fa-plus{
+	float: right;
+	padding-top: 10px;				/*to manually vertically center the "add" icon*/
+}
+
+
+.dragger{
+	color: red;
+	left: -20px;
+	cursor: move;					/*the move icon is shown when hovering over the 'dragger' icon*/
+}
+
+
+.content{
+	display: inline-block;			/*span is orig "display: inline" so the borders and padding doesn't affect the size, which causes the text to cross over into padding*/
+	word-break: break-word;			/*text longer than the width of li will start a new line for itself, or break at the point where it doesn't fit if it's the first word*/
+	width: 95%;						/*to prevent the text from intersecting the "delete* icon*/
+}
+
+
+.completed{
+	color: gray;
+	text-decoration: line-through;
+}
+
+
+.delete{
+	right: -10px;
+	opacity: 0;
+}
+
+
+
+/*ID SELECTORS*******************************************************************************************************************************************************/
+
+/* background color set to white so when the item fades away, it will look like blending in*/
+#container{
+	max-width: 360px;
+	margin: 100px auto 0;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+}
+
+
+#bottom{
+	padding: 20px 20px 15px;
+}
+
+
+#clear{
+	border: 1px solid #232323;
+	color: #232323;
+	border-radius: 6px;
+	padding: 2.5px 10px;
+	right: 20px;
+	bottom: 11px;
+	
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+
+/*Bouncing effect when clicking the button*/
+#clear:active{
+	transform: translate(0px,2px);
+  	-webkit-transform: translate(0px,2px);
+}
+
+
+#clear:hover{
+	background: #232323;
+	color: #fff;
+}
