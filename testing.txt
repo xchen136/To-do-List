@@ -1,0 +1,53 @@
+
+//Project To-do List
+
+1. Input: +add new task
+   -type words
+   -type words and hit "enter"
+   -hit "enter"
+   -hit space & enter
+   -hit multiple space & enter
+   -enter overflow text
+   -enter super long word
+
+2. Current Date
+   -change desktop Date (changes with it)
+
+3. Icon: add new task
+   -toggle the Icon
+
+4. Edit To-do item
+   -enter super long word
+   -enter short text to fill current line
+   -hit "enter & backspace" before first letter
+   -hit "enter & backspace" at other places
+   -hit multiple "spaces & backspaces" before first letter (text will shake shake back&forth by 1 space when entering new line)
+   -hit multiple "spaces & backspaces" between words (text will shake shake back&forth by 1 space when entering new line)
+   -hit multiple "spaces & backspaces" after last letter
+
+5. Delete Task (be mindful of the count)
+   -hover old and new tasks
+   -delete completed new task(s)
+   -delete completed old task(s)
+   -delete incomplete new task(s)
+   -delete incomplete old task(s)
+   -complete some items, delete incomplete items
+
+
+6. Drag and Drop To-do items
+   -drag one by one to the top
+   -drag one by one to the bottom
+   -drag one by one to a random place in the middle of the List
+
+
+7. Button: clear all completed To-do items (be mindful of the count)
+   -clear "no completed" tasks
+   -clear "several completed" tasks
+   -clear "all completed" tasks
+
+
+8. Mess Around
+
+
+
+
