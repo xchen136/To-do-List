@@ -1,4 +1,6 @@
 # To-do-List
+Tech Stack: HTML, CSS, jQuery
+
 Using jQuery to built a simple to-do list which have the following functionalities:
 1. Add new task 
 2. Edit task 
