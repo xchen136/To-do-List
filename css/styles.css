@@ -48,7 +48,8 @@ li, #bottom{
 /*ELEMENT SELECTORS*****************************************************************************************************************************************************/
 
 body{
-	background: #FFEEE4;
+	background-image: url("../image/autumn-leaves.jpg");
+	background-size: cover;
 }
 
 
@@ -143,7 +144,7 @@ input:focus{
 #container{
 	max-width: 360px;
 	margin: 100px auto 0;
-	box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+	box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
 }
 
 
