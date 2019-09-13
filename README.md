@@ -1,4 +1,6 @@
 # To-do-List
+[View Application](http://xiaomin-chen.com/coding-project/todo-list/todo.html)
+
 Tech Stack: HTML, CSS, jQuery
 
 Using jQuery to built a simple to-do list which have the following functionalities:
